@@ -1,0 +1,217 @@
+/* ==============================
+   ADMIN.CSS - Estilo Profesional Premium
+   Paleta principal: verdes inmobiliarios
+   ============================== */
+
+:root {
+  --verde-oscuro: #0f3d2e;
+  --verde-principal: #1f7a5c;
+  --verde-claro: #2fa37a;
+  --gris-fondo: #f4f6f8;
+  --gris-borde: #e0e4e8;
+  --texto-principal: #1f2933;
+  --texto-secundario: #6b7280;
+  --blanco: #ffffff;
+  --sombra: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eef4f1, #f9fbfa);
+  color: var(--texto-principal);
+}
+
+.admin-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px 40px 50px;
+  background: var(--blanco);
+  border-radius: 14px;
+  box-shadow: var(--sombra);
+}
+
+h1 {
+  margin: 0 0 5px;
+  font-size: 28px;
+  color: var(--verde-oscuro);
+}
+
+.subtitle {
+  margin: 0 0 25px;
+  color: var(--texto-secundario);
+}
+
+/* ==============================
+   BLOQUES
+   ============================== */
+
+.block {
+  margin-bottom: 35px;
+  padding: 25px 25px 30px;
+  border: 1px solid var(--gris-borde);
+  border-radius: 12px;
+  background: #fbfdfc;
+}
+
+.block h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--verde-principal);
+  border-left: 4px solid var(--verde-principal);
+  padding-left: 12px;
+}
+
+.block h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: var(--verde-oscuro);
+}
+
+/* ==============================
+   FILAS DE FORMULARIO
+   ============================== */
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--texto-secundario);
+}
+
+.form-row input,
+.form-row select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--gris-borde);
+  font-size: 14px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  outline: none;
+  border-color: var(--verde-claro);
+  box-shadow: 0 0 0 3px rgba(47, 163, 122, 0.15);
+}
+
+.form-row input[readonly] {
+  background: #f1f5f3;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+/* ==============================
+   SELECTOR DE MODO
+   ============================== */
+
+.form-row input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* ==============================
+   BOTONES
+   ============================== */
+
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--verde-principal), var(--verde-claro));
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+  box-shadow: 0 6px 14px rgba(31, 122, 92, 0.25);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(31, 122, 92, 0.3);
+  opacity: 0.95;
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(31, 122, 92, 0.2);
+}
+
+#btn-generar-lotes {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  box-shadow: 0 6px 14px rgba(59, 130, 246, 0.25);
+}
+
+#btn-generar-lotes:hover {
+  box-shadow: 0 10px 22px rgba(59, 130, 246, 0.3);
+}
+
+#btn-exportar-json {
+  background: linear-gradient(135deg, #047857, #10b981);
+  box-shadow: 0 6px 14px rgba(16, 185, 129, 0.25);
+}
+
+/* ==============================
+   TABLA DE LOTES
+   ============================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: #eaf4f1;
+}
+
+thead th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--verde-oscuro);
+}
+
+tbody td {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-top: 1px solid var(--gris-borde);
+}
+
+/* ==============================
+   OCULTAR / MOSTRAR FORMULARIOS
+   ============================== */
+
+.hidden {
+  display: none;
+}
+
+/* ==============================
+   RESPONSIVE BÁSICO
+   ============================== */
+
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 20px 20px 30px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}

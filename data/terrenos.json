@@ -1,0 +1,183 @@
+{
+  "zona": "Laguna Huaypo",
+  "moneda": "USD",
+  "asesores": [
+  { "nombre": "Asesor 1", "whatsapp": "51911111111" },
+  { "nombre": "Asesor 2", "whatsapp": "51922222222" },
+  { "nombre": "Asesor 3", "whatsapp": "51933333333" },
+  { "nombre": "Asesor 4", "whatsapp": "51944444444" }
+],
+
+  "terrenos": [
+    {
+      "id": "T-001",
+      "nombre": "Terreno Agrícola Huaypo Norte",
+      "tipo": "terreno_individual",
+      "uso": "agricola",
+      "estado_legal": {
+        "documento": "Certificado de Posesión",
+        "titulo_propiedad": false,
+        "observaciones": "Inscrito en comunidad local"
+      },
+      "ubicacion": {
+        "lat": -13.4301,
+        "lng": -72.0385,
+        "referencia": "Acceso por trocha carrozable"
+      },
+
+      "area_m2": 5000,
+      "precio": 18000,
+
+      "servicios": [
+        "Acceso vehicular",
+        "Zona agrícola"
+      ],
+
+      "imagenes": [
+        "img/terrenos/T-001/T-001_1.jpg",
+        "img/terrenos/T-001/T-001_2.jpg",
+        "img/terrenos/T-001/T-001_3.jpg"
+      ],
+
+      "beneficios": {
+        "club_campestre": true,
+        "impacto_social": true
+      },
+
+      "financiacion": {
+        "disponible": true,
+        "cuotas_maximas": 12,
+        "inicial_minima": 30
+      },
+
+      "visualizacion": {
+        "panoramica": true,
+        "modelo_3d": false,
+        "proyeccion": []
+      },
+
+      "estado": "disponible",
+
+      "oculto": {
+        "contacto_interno": "Asesor 01",
+        "fecha_registro": "2026-01-10",
+        "notas_legales": "Pendiente saneamiento futuro"
+      }
+    },
+
+    {
+      "id": "L-001",
+      "nombre": "Lotización Ayllu Huaypo",
+      "tipo": "lotizacion",
+      "uso": "residencial_turistico",
+
+      "estado_legal": {
+        "documento": "Acciones y Derechos",
+        "titulo_propiedad": true,
+        "observaciones": "En proceso de independización"
+      },
+
+      "ubicacion": {
+        "lat": -13.396869117689288,
+        "lng": -72.13588027834727,
+        "referencia": "A 5 minutos de la laguna"
+      },
+
+      "beneficios": {
+        "club_campestre": true,
+        "impacto_social": true
+      },
+
+      "financiacion": {
+        "disponible": true,
+        "cuotas_maximas": 24,
+        "inicial_minima": 20
+      },
+
+      "imagenes": [
+        "img/lotizaciones/L-001/general/general_1.jpg",
+        "img/lotizaciones/L-001/general/general_2.jpg"
+      ],
+
+      "lotes": [
+        {
+          "id": "L-001-A",
+          "area_m2": 300,
+          "precio": 9500,
+          "estado": "disponible",
+
+          "imagenes": [
+            "img/lotizaciones/L-001/lotes/L-001-A/L-001-A_1.jpg",
+            "img/lotizaciones/L-001/lotes/L-001-A/L-001-A_2.jpg"
+          ],
+
+          "vista360": "img/360/L-001-A/L-001-A_360.jpg",
+          "modelo3d": "models/bungalow.glb"
+        },
+
+        {
+          "id": "L-001-B",
+          "area_m2": 350,
+          "precio": 11000,
+          "estado": "disponible",
+
+          "imagenes": [
+            "img/lotizaciones/L-001/lotes/L-001-B/L-001-B_1.jpg"
+          ],
+          "vista360": "img/360/L-001-B/L-001-B_360.jpg"
+        },
+
+        {
+          "id": "L-001-C",
+          "area_m2": 300,
+          "precio": 9500,
+          "estado": "disponible",
+
+          "imagenes": [
+            "img/lotizaciones/L-001/lotes/L-001-C/L-001-C_1.jpg"
+          ]
+        },
+
+        {
+          "id": "L-001-D",
+          "area_m2": 400,
+          "precio": 13000,
+          "estado": "disponible",
+
+          "imagenes": [
+            "img/lotizaciones/L-001/lotes/L-001-D/L-001-D_1.jpg"
+          ]
+        },
+
+        {
+          "id": "L-001-E",
+          "area_m2": 450,
+          "precio": 17000,
+          "estado": "disponible",
+
+          "imagenes": [
+            "img/lotizaciones/L-001/lotes/L-001-E/L-001-E_1.jpg"
+          ]
+        }
+      ],
+
+      "visualizacion": {
+        "panoramica": true,
+        "modelo_3d": true,
+        "proyeccion": [
+          "bungalow_alpino",
+          "casa_campo",
+          "negocio_turistico"
+        ]
+      },
+
+      "estado": "disponible",
+
+      "oculto": {
+        "porcentaje_acciones": 100,
+        "fecha_registro": "2026-01-12",
+        "notas_legales": "Incluye reglamento interno"
+      }
+    }
+  ]
+}

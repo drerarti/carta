@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha del Terreno</title>
+  <link rel="stylesheet" href="css/ficha.css">
+</head>
+<body>
+
+<div class="ficha-container">
+
+  <!-- HERO / IMAGEN PRINCIPAL -->
+  <div class="ficha-hero">
+    <img id="ficha-hero-img" src="" alt="Imagen principal">
+    <div class="ficha-hero-overlay">
+      <h1 id="ficha-nombre">Cargando...</h1>
+      <span id="ficha-tipo" class="ficha-badge-principal"></span>
+    </div>
+  </div>
+
+  <!-- BLOQUE: INFORMACIÓN GENERAL -->
+  <section class="ficha-card">
+    <h3>Información General</h3>
+
+    <div class="ficha-grid">
+      <div><strong>Área</strong><span id="ficha-area"></span></div>
+      <div><strong>Precio</strong><span id="ficha-precio"></span></div>
+      <div><strong>Estado</strong><span id="ficha-estado"></span></div>
+      <div><strong>Uso</strong><span id="ficha-uso"></span></div>
+    </div>
+  </section>
+
+  <!-- BLOQUE: UBICACIÓN -->
+  <section class="ficha-card">
+    <h3>Ubicación</h3>
+    <p id="ficha-referencia"></p>
+  </section>
+
+  <!-- BLOQUE: DOCUMENTACIÓN -->
+  <section class="ficha-card">
+    <h3>Documentación</h3>
+    <p id="ficha-documento"></p>
+  </section>
+
+  <!-- BLOQUE: BENEFICIOS -->
+  <section class="ficha-card">
+    <h3>Beneficios del Proyecto</h3>
+    <div id="ficha-beneficios" class="ficha-badges"></div>
+  </section>
+
+  <!-- BLOQUE: GALERÍA -->
+  <section class="ficha-card">
+    <h3>Galería</h3>
+    <div id="ficha-galeria" class="ficha-galeria"></div>
+  </section>
+
+  <!-- BLOQUE: QR -->
+  <section class="ficha-card ficha-qr">
+    <h3>Escanea para ver en el mapa</h3>
+    <div id="qr-container"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ficha-footer">
+    <button onclick="window.print()">Imprimir / Guardar PDF</button>
+    <p>© 2026 Ayllu Laguna Huaypo</p>
+  </footer>
+
+</div>
+
+<script src="js/ficha.js"></script>
+</body>
+</html>
